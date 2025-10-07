@@ -3,13 +3,15 @@ services:
   fuss-1-www:
     image: anssi/fcsc2020-web-fuss-1-www:latest
     ports:
-      - "80:80"
+      - ${PORT}:80
+    labels:
+      ho.ctf.cyrhades: "1"
     depends_on:
       - fuss-1-mongodb
     networks:
       - fuss-1-external
       - fuss-1-internal
-      
+
   fuss-1-mongodb:
     image: mongo:4.2.6
     ports:
@@ -17,7 +19,7 @@ services:
     hostname: "fuss-1-mongodb"
     networks:
       - fuss-1-internal
-      
+
   fuss-1-bot:
     image: anssi/fcsc2020-web-fuss-1-bot:latest
     environment:
@@ -37,4 +39,3 @@ networks:
   fuss-1-external:
   fuss-1-internal:
     internal: true
- 
