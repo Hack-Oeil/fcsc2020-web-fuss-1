@@ -3,7 +3,7 @@
 On vous demande d’auditer cette solution de feedback dévéloppée par la société Feedback Unlimited Secure Solutions (FUSS).
 
 
-Auteur : [Cryptanalyse](https://twitter.com/Cryptanalyse)
+Auteur : [Cryptanalyse](https://x.com/Cryptanalyse)
 
 Origine : [FUSS 1](https://hackropole.fr/fr/challenges/web/fcsc2020-web-fuss-1/)
 
